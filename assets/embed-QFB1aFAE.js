@@ -1,0 +1,12 @@
+import{d as e,r as t,t as n,u as r}from"./jsx-runtime-BSM4iq3Y.js";var i=e(),a=r(),o=n(),s=`
+:root { --paper:#f4f0e8; --ink:#1c1b18; --ink2:#47443d; --muted:#6b665d; --rule:#d9d2c3; --warning:#9a7200; --good:#3c7d22; --critical:#c4241a; --cyan:#007ea8; }
+:root[data-theme='dark'] { --paper:#161512; --ink:#ece7dc; --ink2:#c9c3b6; --muted:#8f897d; --rule:#2f2c27; --warning:#ffd23f; --good:#8fd14f; --critical:#ff4b3e; --cyan:#17a3c0; }
+* { box-sizing: border-box; } html, body { margin: 0; background: var(--paper); color: var(--ink); }
+a.badge { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: center; padding: 14px 16px; height: 100vh;
+  text-decoration: none; color: inherit; border: 1px solid var(--rule); font: 13px/1.35 'Schibsted Grotesk', Arial, sans-serif; }
+.n { grid-row: span 3; font: 500 54px/1 Newsreader, Georgia, serif; }
+.k { font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink2); display: flex; align-items: center; gap: 6px; }
+.k i { width: 8px; height: 8px; display: inline-block; }
+.h { font: 500 15px/1.25 Newsreader, Georgia, serif; }
+.f { font-size: 11px; color: var(--muted); }
+`,c={frenzy:`var(--warning)`,boom:`var(--good)`,bubble:`var(--critical)`,winter:`var(--cyan)`};function l(){let[e,n]=(0,i.useState)(null);return(0,i.useEffect)(()=>{new URLSearchParams(location.search).get(`theme`)===`dark`&&document.documentElement.setAttribute(`data-theme`,`dark`),fetch(`./data/snapshot.json`,{cache:`no-store`}).then(e=>e.json()).then(n).catch(()=>{})},[]),e?(0,o.jsxs)(`a`,{className:`badge`,href:`./`,target:`_blank`,rel:`noopener`,title:`Open the full issue`,children:[(0,o.jsx)(`span`,{className:`n`,children:Math.round(e.stretch??0)}),(0,o.jsxs)(`span`,{className:`k`,children:[(0,o.jsx)(`i`,{style:{background:c[e.regime??`frenzy`]}}),`AI Bubble Index · `,e.regime?t[e.regime]:``]}),(0,o.jsx)(`span`,{className:`h`,children:e.headline}),(0,o.jsxs)(`span`,{className:`f`,children:[`AI Bubble Tracker · `,e.asOf]})]}):null}var u=document.createElement(`style`);u.textContent=s,document.head.append(u),(0,a.createRoot)(document.getElementById(`embed`)).render((0,o.jsx)(i.StrictMode,{children:(0,o.jsx)(l,{})}));
